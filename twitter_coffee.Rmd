@@ -30,6 +30,8 @@ coffee_tweets%>%
   select(-hashtags, -symbols, -urls_url, -urls_t.co)%>%
   write_csv("coffee_07_Oct_21.csv")
 
+coffee_short%>%write_csv("coffee_short_07_Oct_2021.csv")
+
 ```
 
 ```{r}
