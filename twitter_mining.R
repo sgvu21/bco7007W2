@@ -26,3 +26,9 @@ all_data<-map.df(files, ~read_csv(.x)) # open and merge
 #you may have duplicate entries 
 final_data<-all_data%>%distinct()
 
+
+
+ts_plot(coffee_short, "hours") +
+  labs()
+
+
